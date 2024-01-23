@@ -1,0 +1,33 @@
+.full-height {
+	height: 100vh;
+}
+
+.height-10 {
+	height: 10%;
+}
+
+.height-20 {
+	height: 20%;
+}
+
+.height-30 {
+	height: 30%;
+}
+.height-80 {
+	height: 80%;
+}
+
+.width-80 {
+	width: 80%;
+}
+
+.height-100 {
+	height: 100%;
+}
+
+@media (max-width: 767px) {
+	/* For screens smaller than 768px (small screens) */
+	.height-100 {
+		height: 60%;
+	}
+}
