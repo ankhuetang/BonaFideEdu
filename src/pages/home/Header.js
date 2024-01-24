@@ -1,4 +1,6 @@
 import React from 'react';
+
+import { motion } from 'framer-motion';
 import './Header.css';
 
 const Header = () => {
@@ -7,10 +9,15 @@ const Header = () => {
 			<div class='container-fluid header-bg text-center globe'>
 				<div class='row full-height p-5 align-items-center'>
 					<div class='col-md-12'>
-						<div class='header-title'>
+						<motion.div
+							className='header-title'
+							initial={{ opacity: 0, scale: 0.8 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{ duration: 1.0 }}
+						>
 							<h2 className='fs-1 fw-bold font-monospace'>Bona Fide</h2>
 							<p className='fw-light'>Teachers without borders</p>
-						</div>
+						</motion.div>
 					</div>
 
 					{/* <div class='col-md-6'>

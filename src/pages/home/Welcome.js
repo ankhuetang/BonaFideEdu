@@ -1,5 +1,6 @@
 import React from 'react';
 import './Welcome.css';
+import { motion } from 'framer-motion';
 import Avatar from '../../shared/Avatar';
 
 const Welcome = () => {
