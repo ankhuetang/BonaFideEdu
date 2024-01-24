@@ -11,3 +11,9 @@
 .nav-link {
 	color: var(--gray-color);
 }
+
+.dd-item {
+	color: var(--prinary-color);
+	text-decoration: none;
+	/* font-weight: bold; */
+}

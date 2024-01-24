@@ -1,15 +1,19 @@
 import React from 'react';
 
+import { NavLink } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 import './Navbar.css';
+import { Nav } from 'react-bootstrap';
 
 const Navbar = () => {
 	return (
 		<>
 			<nav className='nav-color navbar navbar-expand-lg fixed-top'>
 				<div className='container-fluid px-5'>
-					<a className='navbar-brand' href=''>
+					<NavLink className='navbar-brand' to='/'>
 						BonaFide
-					</a>
+					</NavLink>
 					<button
 						className='navbar-toggler'
 						type='button'
@@ -25,19 +29,18 @@ const Navbar = () => {
 					>
 						<ul className='navbar-nav'>
 							<li className='nav-item'>
-								<a className='nav-link active' aria-current='page' href=''>
+								<NavLink className='nav-link active' aria-current='page' to='/'>
 									Home
-								</a>
+								</NavLink>
 							</li>
 							<li className='nav-item'>
-								<a className='nav-link' href=''>
+								<NavLink className='nav-link' to='/about'>
 									About us
-								</a>
+								</NavLink>
 							</li>
 							<li class='nav-item dropdown'>
 								<a
 									class='nav-link dropdown-toggle'
-									href='#'
 									role='button'
 									data-bs-toggle='dropdown'
 									aria-expanded='false'
@@ -46,26 +49,36 @@ const Navbar = () => {
 								</a>
 								<ul class='dropdown-menu'>
 									<li>
-										<a class='dropdown-item' href=''>
+										<NavLink class='dropdown-item dd-item' to='ielts'>
 											IELTS
-										</a>
+										</NavLink>
 									</li>
 									<li>
-										<a class='dropdown-item' href=''>
+										<NavLink class='dropdown-item dd-item' to='sat'>
 											SAT
-										</a>
+										</NavLink>
 									</li>
 									<li>
-										<a class='dropdown-item' href=''>
+										<NavLink
+											class='dropdown-item dd-item'
+											to='/academic-writing'
+										>
 											Academic Writing
-										</a>
+										</NavLink>
 									</li>
 								</ul>
 							</li>
 							<li className='nav-item'>
-								<a className='nav-link' href=''>
-									Contact
-								</a>
+								<ScrollLink
+									className='nav-link'
+									to='contact-section'
+									spy={true}
+									smooth={true}
+									duration={500}
+									style={{ cursor: 'pointer' }}
+								>
+									<a>Contact</a>
+								</ScrollLink>
 							</li>
 						</ul>
 					</div>
