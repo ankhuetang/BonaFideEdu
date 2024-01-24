@@ -31,3 +31,11 @@
 		height: 60%;
 	}
 }
+
+.fb-bg {
+	background-color: var(--cream-color);
+}
+
+.fb-title {
+	color: var(--primary-color);
+}

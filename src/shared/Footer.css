@@ -1,0 +1,27 @@
+.height-20 {
+	height: 30vh;
+}
+
+.height-50 {
+	height: 50%;
+}
+
+.footer-bg {
+	background-color: var(--primary-color);
+}
+
+.footer-title {
+	color: var(--gray-color);
+}
+
+.twitter {
+	color: var(--cream-color);
+}
+
+.insta {
+	color: var(--cream-color);
+}
+
+.fbook {
+	color: var(--cream-color);
+}

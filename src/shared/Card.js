@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Card.css';
 
-const Card = ({ title, info, link }) => {
+const Card = ({ title, info, link, imageUrl }) => {
 	return (
 		<>
 			<div class='card height-100'>
@@ -12,10 +12,10 @@ const Card = ({ title, info, link }) => {
 					style={{ width: '100%', height: '40%' }}
 				/>
 				<div class='card-body'>
-					<h5 class='card-title'>{title} Card title</h5>
-					<p class='card-text'>{info} Helo skrtsskrtt</p>
-					<a href={{ link }} class='btn btn-primary'>
-						Click me
+					<h5 class='card-title'>{title} IELTS Course</h5>
+					<p class='card-text'>{info} Let's get 8.0 and beyond together</p>
+					<a href={{ link }} class='btn'>
+						View Course
 					</a>
 				</div>
 			</div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import WavingHandIcon from '@mui/icons-material/WavingHand';
@@ -16,7 +16,7 @@ const Avatar = ({ imageUrl, intro, name, schoolUrl }) => {
 					data-bs-toggle='modal'
 					data-bs-target='#avatarModal'
 				/>
-				<WavingHandIcon data-tooltip-id='abc' />
+				{/* <WavingHandIcon data-tooltip-id='abc' />
 				<ReactTooltip
 					id='abc'
 					effect='solid'
@@ -24,7 +24,7 @@ const Avatar = ({ imageUrl, intro, name, schoolUrl }) => {
 					className='skills-tooltip'
 				>
 					heluuuu
-				</ReactTooltip>
+				</ReactTooltip> */}
 
 				{/* Modal */}
 				<div
@@ -38,7 +38,7 @@ const Avatar = ({ imageUrl, intro, name, schoolUrl }) => {
 						<div className='modal-content'>
 							<div className='modal-header'>
 								<h5 className='modal-title' id='avatarModalLabel'>
-									{name}
+									{name} Hi, I'm Nhan!
 								</h5>
 								<button
 									type='button'
@@ -49,7 +49,9 @@ const Avatar = ({ imageUrl, intro, name, schoolUrl }) => {
 							</div>
 							<div className='modal-body'>
 								<div className='row'>
-									<div className='col-8'>{intro}</div>
+									<div className='col-8 d-flex align-items-start'>
+										{intro}Looking forward to see you in class!
+									</div>
 									<div className='col-4'>
 										<img
 											className='ava-size rounded-circle img-thumbnail'

@@ -25,3 +25,11 @@
 	background-repeat: no-repeat;
 	/* color: #20f2f2; */
 }
+
+.welcome-bg {
+	background-color: var(--gray-color);
+}
+
+.title {
+	color: var(--primary-color);
+}

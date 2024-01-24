@@ -14,9 +14,9 @@ import { FreeMode, Pagination } from 'swiper/modules';
 const Courses = () => {
 	return (
 		<>
-			<div class='container-fluid p-4 bg-primary-subtle text-center full-height d-flex flex-column align-items-center'>
-				<div className='height-20 pt-4'>
-					<h1>Our courses</h1>
+			<div class='container-fluid p-4 courses-bg text-center full-height d-flex flex-column align-items-center'>
+				<div className='container d-flex justify-content-center align-items-center height-20 pt-4'>
+					<h1 className='courses-title'>Our courses</h1>
 				</div>
 				<Swiper
 					slidesPerView={3}

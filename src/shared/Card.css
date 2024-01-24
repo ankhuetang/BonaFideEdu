@@ -7,3 +7,25 @@
 	height: 100%;
 	width: 100%;
 }
+
+.card-body {
+	background-color: var(--gray-color);
+}
+
+.btn {
+	background-color: var(--secondary-color);
+	border: none;
+	color: var(--cream-color);
+}
+
+.card {
+	border: none;
+}
+
+.card-title {
+	color: var(--primary-color);
+}
+
+.card-text {
+	color: var(--primary-color);
+}

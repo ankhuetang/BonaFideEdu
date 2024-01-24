@@ -20,3 +20,11 @@
 	height: 100%;
 	object-fit: cover;
 }
+
+.courses-bg {
+	background-color: var(--primary-color);
+}
+
+.courses-title {
+	color: var(--cream-color);
+}

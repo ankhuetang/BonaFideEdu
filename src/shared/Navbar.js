@@ -1,13 +1,14 @@
 import React from 'react';
+
 import './Navbar.css';
 
 const Navbar = () => {
 	return (
 		<>
-			<nav className='navbar navbar-expand-lg bg-body-tertiary'>
+			<nav className='nav-color navbar navbar-expand-lg fixed-top'>
 				<div className='container-fluid px-5'>
-					<a className='navbar-brand' href='#'>
-						Navbar
+					<a className='navbar-brand' href=''>
+						BonaFide
 					</a>
 					<button
 						className='navbar-toggler'
@@ -24,12 +25,12 @@ const Navbar = () => {
 					>
 						<ul className='navbar-nav'>
 							<li className='nav-item'>
-								<a className='nav-link active' aria-current='page' href='#'>
+								<a className='nav-link active' aria-current='page' href=''>
 									Home
 								</a>
 							</li>
 							<li className='nav-item'>
-								<a className='nav-link' href='#'>
+								<a className='nav-link' href=''>
 									About us
 								</a>
 							</li>
@@ -45,24 +46,24 @@ const Navbar = () => {
 								</a>
 								<ul class='dropdown-menu'>
 									<li>
-										<a class='dropdown-item' href='#'>
+										<a class='dropdown-item' href=''>
 											IELTS
 										</a>
 									</li>
 									<li>
-										<a class='dropdown-item' href='#'>
+										<a class='dropdown-item' href=''>
 											SAT
 										</a>
 									</li>
 									<li>
-										<a class='dropdown-item' href='#'>
+										<a class='dropdown-item' href=''>
 											Academic Writing
 										</a>
 									</li>
 								</ul>
 							</li>
 							<li className='nav-item'>
-								<a className='nav-link' href='#'>
+								<a className='nav-link' href=''>
 									Contact
 								</a>
 							</li>
