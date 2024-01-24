@@ -1,4 +1,4 @@
-.skills-tooltip {
+.tooltip {
 	max-width: 300px !important;
 	background-color: var(--white-color) !important;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
@@ -16,14 +16,37 @@
 	}
 }
 
-.ava-size {
-	width: 50%;
+.img-thumbnail {
+	padding: 0.25rem;
+	background-color: var(--bs-body-bg);
+	border: var(--bs-border-width) solid var(--bs-border-color);
+	border-radius: var(--bs-border-radius);
+	max-width: 100%;
+	height: auto;
+}
+
+.ava {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.ava-large {
+	width: 60%;
+	height: auto;
+}
+
+.ava-small {
+	width: 45%;
 	height: auto;
 }
 
 @media (max-width: 767px) {
-	.ava-size {
+	.ava-large {
 		width: 100%;
+		height: auto;
+	}
+
+	.ava-small {
+		width: 80%;
 		height: auto;
 	}
 }

@@ -13,6 +13,9 @@
 .height-80 {
 	height: 80%;
 }
+.height-90 {
+	height: 90%;
+}
 
 .height-100 {
 	height: 100%;
@@ -20,7 +23,7 @@
 
 .astronaut {
 	background-image: url('../../images/astronaut.svg'); /* Update the path to your SVG file */
-	background-size: 60%; /* Adjust as needed */
+	background-size: 80%; /* Adjust as needed */
 	background-position: center; /* Adjust as needed */
 	background-repeat: no-repeat;
 	/* color: #20f2f2; */

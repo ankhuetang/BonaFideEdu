@@ -6,27 +6,16 @@ import WavingHandIcon from '@mui/icons-material/WavingHand';
 import 'react-tooltip/dist/react-tooltip.css';
 import './Avatar.css';
 
-const Avatar = ({ imageUrl, intro, name, schoolUrl }) => {
+const Avatar = ({ imgClassName, imageUrl, intro, name, schoolUrl }) => {
 	return (
 		<>
 			<div>
 				<img
-					className='ava-size rounded-circle img-thumbnail'
+					className={`${imgClassName} ava rounded-circle ava`}
 					src='https://m.media-amazon.com/images/M/MV5BNzEwOTcxZmItZmZhZC00ZmU1LWExNDItNzBhZTdiMmRkNzIwXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg'
 					data-bs-toggle='modal'
 					data-bs-target='#avatarModal'
 				/>
-				{/* <WavingHandIcon data-tooltip-id='abc' />
-				<ReactTooltip
-					id='abc'
-					effect='solid'
-					arrowColor='#fff'
-					className='skills-tooltip'
-				>
-					heluuuu
-				</ReactTooltip> */}
-
-				{/* Modal */}
 				<div
 					className='modal fade'
 					id='avatarModal'
