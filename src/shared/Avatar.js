@@ -1,18 +1,17 @@
 import React from 'react';
 
-import { Tooltip as ReactTooltip } from 'react-tooltip';
-import WavingHandIcon from '@mui/icons-material/WavingHand';
+import { Cloudinary } from '@cloudinary/url-gen';
+import { AdvancedImage } from '@cloudinary/react';
 
-import 'react-tooltip/dist/react-tooltip.css';
 import './Avatar.css';
 
-const Avatar = ({ imgClassName, imageUrl, intro, name, schoolUrl }) => {
+const Avatar = ({ imgClassName, image, intro, name, school }) => {
 	return (
 		<>
 			<div>
-				<img
-					className={`${imgClassName} ava rounded-circle ava`}
-					src='https://m.media-amazon.com/images/M/MV5BNzEwOTcxZmItZmZhZC00ZmU1LWExNDItNzBhZTdiMmRkNzIwXkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg'
+				<AdvancedImage
+					className={`${imgClassName} ava rounded-circle`}
+					cldImg={image}
 					data-bs-toggle='modal'
 					data-bs-target='#avatarModal'
 				/>
@@ -27,7 +26,7 @@ const Avatar = ({ imgClassName, imageUrl, intro, name, schoolUrl }) => {
 						<div className='modal-content'>
 							<div className='modal-header'>
 								<h5 className='modal-title' id='avatarModalLabel'>
-									{name} Hi, I'm Nhan!
+									{name}
 								</h5>
 								<button
 									type='button'
@@ -38,13 +37,11 @@ const Avatar = ({ imgClassName, imageUrl, intro, name, schoolUrl }) => {
 							</div>
 							<div className='modal-body'>
 								<div className='row'>
-									<div className='col-8 d-flex align-items-start'>
-										{intro}Looking forward to see you in class!
-									</div>
+									<div className='col-8 d-flex align-items-start'>{intro}</div>
 									<div className='col-4'>
-										<img
+										<AdvancedImage
 											className='ava-size rounded-circle img-thumbnail'
-											src='https://www.kindpng.com/picc/m/366-3667057_brown-university-logo-transparent-logo-brown-university-hd.png'
+											cldImg={school}
 										/>
 									</div>
 								</div>
