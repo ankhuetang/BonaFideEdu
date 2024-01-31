@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './About.css';
+
 const About = () => {
 	return (
 		<>
-			<div class='container-fluid header-bg d-flex align-items-center justify-content-center globe'>
+			<div className='container-fluid about-head d-flex align-items-center justify-content-center'>
 				<h1>About Us</h1>
 			</div>
 		</>

@@ -1,0 +1,9 @@
+.about-head {
+	height: 100vh;
+	background-color: var(--primary-color);
+	color: var(--cream-color);
+	background-image: url('../../images/dove-about.svg'); /* Update the path to your SVG file */
+	background-size: 50%; /* Adjust as needed */
+	background-position: center; /* Adjust as needed */
+	background-repeat: no-repeat;
+}

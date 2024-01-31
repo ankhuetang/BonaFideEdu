@@ -4,6 +4,11 @@ import { motion } from 'framer-motion';
 import Avatar from '../../shared/Avatar';
 
 const Welcome = () => {
+	const data = {
+		an: {
+			img: 'hilyu',
+		},
+	};
 	return (
 		<>
 			<div class='container-fluid p-4 welcome-bg text-center full-height'>
