@@ -38,7 +38,7 @@ const Navbar = () => {
 									About us
 								</NavLink>
 							</li>
-							<li class='nav-item dropdown'>
+							{/* <li class='nav-item dropdown'>
 								<a
 									class='nav-link dropdown-toggle'
 									role='button'
@@ -67,7 +67,7 @@ const Navbar = () => {
 										</NavLink>
 									</li>
 								</ul>
-							</li>
+							</li> */}
 							<li className='nav-item'>
 								<ScrollLink
 									className='nav-link'
