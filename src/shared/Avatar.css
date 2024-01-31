@@ -27,7 +27,13 @@
 
 .ava {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	object-fit: cover;
+	object-position: top;
 	transition: transform 0.3s ease-in-out;
+}
+
+.an-ava {
+	object-position: center;
 }
 
 .ava:hover {
@@ -39,8 +45,8 @@
 }
 
 .ava-large {
-	width: 6rem;
-	height: auto;
+	width: 8rem;
+	height: 8rem;
 }
 
 .ava-small {
@@ -48,10 +54,14 @@
 	height: auto;
 }
 
+.intro-text {
+	text-align: justify;
+}
+
 @media (max-width: 767px) {
 	.ava-large {
-		width: 100%;
-		height: auto;
+		width: 6rem;
+		height: 6rem;
 	}
 
 	.ava-small {

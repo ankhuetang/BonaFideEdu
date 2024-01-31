@@ -28,4 +28,5 @@
 
 .card-text {
 	color: var(--primary-color);
+	text-align: justify;
 }

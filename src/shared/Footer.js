@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsTwitter, BsInstagram } from 'react-icons/bs'; //bs = boostrap icon
-import { FaFacebookF } from 'react-icons/fa';
+import { FaFacebookF, FaEnvelope } from 'react-icons/fa';
 
 import './Footer.css';
 
@@ -14,13 +14,19 @@ const Footer = () => {
 					</div>
 					<div className='row social height-50 align-items-center justify-content-center'>
 						<div className='col-1 align-self-start'>
-							<BsTwitter className='twitter' />
+							<a href='mailto:bona.fide.edu.vn@gmail.com'>
+								<FaEnvelope className='twitter' />
+							</a>
 						</div>
 						<div className='col-1 align-self-start'>
-							<BsInstagram className='insta' />
+							<a href='https://www.instagram.com/sheen.nguyen.30/'>
+								<BsInstagram className='insta' />
+							</a>
 						</div>
 						<div className='col-1 align-self-start'>
-							<FaFacebookF className='fbook' />
+							<a href='https://www.facebook.com/profile.php?id=100090331195780'>
+								<FaFacebookF className='fbook' />
+							</a>
 						</div>
 					</div>
 				</div>

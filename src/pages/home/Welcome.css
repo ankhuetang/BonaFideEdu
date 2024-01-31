@@ -29,10 +29,23 @@
 	/* color: #20f2f2; */
 }
 
+.dove-welcome {
+	background-image: url('../../images/dove-welcome.svg'); /* Update the path to your SVG file */
+	background-size: 80%; /* Adjust as needed */
+	background-position: center; /* Adjust as needed */
+	background-repeat: no-repeat;
+}
+
 .welcome-bg {
 	background-color: var(--gray-color);
 }
 
 .title {
+	color: var(--primary-color);
+}
+
+.bona-fide {
+	text-align: left;
+	line-height: 1.5;
 	color: var(--primary-color);
 }

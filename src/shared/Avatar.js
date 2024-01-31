@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { Cloudinary } from '@cloudinary/url-gen';
 import { AdvancedImage } from '@cloudinary/react';
 
 import './Avatar.css';
 
-const Avatar = ({ imgClassName, image, intro, name, school }) => {
+const Avatar = ({ imgClassName, image, intro, name, school, modalId }) => {
 	return (
 		<>
 			<div>
@@ -13,19 +12,19 @@ const Avatar = ({ imgClassName, image, intro, name, school }) => {
 					className={`${imgClassName} ava rounded-circle`}
 					cldImg={image}
 					data-bs-toggle='modal'
-					data-bs-target='#avatarModal'
+					data-bs-target={`#${modalId}`}
 				/>
 				<div
 					className='modal fade'
-					id='avatarModal'
+					id={modalId}
 					tabIndex='-1'
-					aria-labelledby='avatarModalLabel'
+					aria-labelledby={`${modalId}Label`}
 					aria-hidden='true'
 				>
 					<div className='modal-dialog modal-dialog-centered'>
 						<div className='modal-content'>
 							<div className='modal-header'>
-								<h5 className='modal-title' id='avatarModalLabel'>
+								<h5 className='modal-title' id={`${modalId}Label`}>
 									{name}
 								</h5>
 								<button
@@ -37,7 +36,9 @@ const Avatar = ({ imgClassName, image, intro, name, school }) => {
 							</div>
 							<div className='modal-body'>
 								<div className='row'>
-									<div className='col-8 d-flex align-items-start'>{intro}</div>
+									<div className='col-8 d-flex align-items-start intro-text'>
+										{intro}
+									</div>
 									<div className='col-4'>
 										<AdvancedImage
 											className='ava-size rounded-circle img-thumbnail'
