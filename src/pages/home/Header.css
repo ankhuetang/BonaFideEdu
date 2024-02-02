@@ -44,3 +44,14 @@
 	position: relative;
 	z-index: 5;
 }
+
+.register {
+	position: relative;
+	background-color: transparent;
+	border: 2px solid var(--cream-color);
+	color: var(--cream-color); /* Optional: Set text color to navy */
+	padding: 10px 20px; /* Adjust padding as needed */
+	cursor: pointer;
+	text-decoration: none;
+	z-index: 10;
+}

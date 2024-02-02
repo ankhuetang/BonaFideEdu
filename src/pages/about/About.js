@@ -20,7 +20,15 @@ const About = () => {
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{ duration: 1.0 }}
 				>
-					<h1 className='fs-1 fw-bold font-monospace'>About Us</h1>
+					<h1 className='mb-4 fs-1 fw-bold font-monospace '>About Us</h1>
+					<a
+						href='https://forms.office.com/r/K9kxsJB88m?origin=lprLink'
+						className='register'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						Register here!
+					</a>
 				</motion.div>
 			</div>
 			<div

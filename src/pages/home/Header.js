@@ -27,6 +27,14 @@ const Header = () => {
 								Bona Fide Edu
 							</h1>
 							<p className='fw-light header-text'>Teachers without borders</p>
+							<a
+								href='https://forms.office.com/r/K9kxsJB88m?origin=lprLink'
+								className='register'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								Register here!
+							</a>
 						</motion.div>
 					</div>
 
