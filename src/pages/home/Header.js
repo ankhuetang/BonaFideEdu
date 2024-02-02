@@ -24,7 +24,7 @@ const Header = () => {
 							transition={{ duration: 1.0 }}
 						>
 							<h1 className='fs-1 fw-bold font-monospace header-text'>
-								Bona Fide Edu
+								Bona Fide Education
 							</h1>
 							<p className='fw-light header-text'>Teachers without borders</p>
 							<a
