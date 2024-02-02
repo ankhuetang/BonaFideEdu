@@ -1,12 +1,20 @@
 import React from 'react';
 
+import { Cloudinary } from '@cloudinary/url-gen';
 import { motion } from 'framer-motion';
+
 import './Header.css';
 
 const Header = () => {
+	const cld = new Cloudinary({ cloud: { cloudName: 'dweffaoxw' } });
+	const brown = cld.image('brown-bg').toURL();
+
 	return (
 		<>
-			<div class='container-fluid header-bg text-center globe'>
+			<div
+				class='container-fluid header-bg text-center'
+				style={{ backgroundImage: `url(${brown})` }}
+			>
 				<div class='row full-height p-5 align-items-center'>
 					<div class='col-md-12'>
 						<motion.div
@@ -15,8 +23,10 @@ const Header = () => {
 							animate={{ opacity: 1, scale: 1 }}
 							transition={{ duration: 1.0 }}
 						>
-							<h2 className='fs-1 fw-bold font-monospace'>Bona Fide</h2>
-							<p className='fw-light'>Teachers without borders</p>
+							<h1 className='fs-1 fw-bold font-monospace header-text'>
+								Bona Fide Edu
+							</h1>
+							<p className='fw-light header-text'>Teachers without borders</p>
 						</motion.div>
 					</div>
 

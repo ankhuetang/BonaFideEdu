@@ -29,9 +29,16 @@
 	/* color: #20f2f2; */
 }
 
+.logo-bg {
+	background-size: 60%; /* Adjust as needed */
+	background-position: center; /* Adjust as needed */
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+
 .dove-welcome {
 	background-image: url('../../images/dove-welcome.svg'); /* Update the path to your SVG file */
-	background-size: 80%; /* Adjust as needed */
+	background-size: 60%; /* Adjust as needed */
 	background-position: center; /* Adjust as needed */
 	background-repeat: no-repeat;
 }
@@ -42,10 +49,14 @@
 
 .title {
 	color: var(--primary-color);
+	/* font-family: var(--font-family);
+	font-weight: bold; */
 }
 
 .bona-fide {
 	text-align: left;
 	line-height: 1.5;
 	color: var(--primary-color);
+	font-style: italic;
+	font-family: var(--font-base);
 }

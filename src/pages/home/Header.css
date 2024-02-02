@@ -2,28 +2,45 @@
 	height: 100vh;
 }
 
-.globe {
-	background-image: url('../../images/globe.svg'); /* Update the path to your SVG file */
-	background-size: cover; /* Adjust as needed */
-	background-position: center; /* Adjust as needed */
+/* .globe {
+	background-image: url('../../images/globe.svg'); 
+	background-size: cover; 
+	background-position: center; 
 	background-repeat: no-repeat;
-	/* color: #20f2f2; */
-}
+} */
 
 .header-bg {
-	background-color: var(--primary-color);
+	/* background-color: var(--primary-color); */
+	position: relative;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+.header-bg::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(17, 45, 78, 0.3);
 }
 
 /* .title {
 	color: rgb(249, 247, 247, 0.9);
 } */
 
-.header-title h2 {
+.header-title h1 {
 	color: var(--cream-color);
-	font-family: var(--font-base);
+	/* font-family: var(--font-family); */
+	position: relative;
+	z-index: 5;
 }
 
 .header-title p {
 	color: var(--gray-color);
 	font-size: small;
+	position: relative;
+	z-index: 5;
 }

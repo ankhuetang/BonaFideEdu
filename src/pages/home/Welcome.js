@@ -7,6 +7,7 @@ import Avatar from '../../shared/Avatar';
 
 const Welcome = () => {
 	const cld = new Cloudinary({ cloud: { cloudName: 'dweffaoxw' } });
+	const logo = cld.image('bonafide').toURL();
 
 	const data = {
 		an: {
@@ -45,14 +46,14 @@ const Welcome = () => {
 	return (
 		<>
 			<div class='container-fluid p-4 welcome-bg globe text-center full-height'>
-				<div className='title row text-center align-items-start height-10 pt-3 mt-2'>
+				<div className='title row text-center align-items-center height-20 pt-3 mt-2'>
 					<h1>Welcome from our instructors</h1>
 				</div>
-				<div className='row height-90 pt-5 mt-1'>
+				<div className='row height-80 mt-1'>
 					<div class='col-md-5 d-flex justify-content-center align-items-center dove-welcome'>
 						<p className='h1 bona-fide'>
-							"If something <br /> is made 'Bona Fide',
-							<br /> it's sincere, genuine <br /> and authentic"
+							If something <br /> is made 'Bona Fide',
+							<br /> it's sincere, genuine <br /> and authentic.
 						</p>
 					</div>
 					<div class='col'>

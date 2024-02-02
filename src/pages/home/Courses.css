@@ -6,7 +6,7 @@
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
-	background: #fff;
+	background: var(--gray-color);
 
 	display: flex;
 	justify-content: center;
@@ -26,4 +26,23 @@
 
 .courses-title {
 	color: var(--cream-color);
+}
+
+.globe {
+	background-image: url('../../images/globe.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: var(--gray-color);
+
+		display: flex;
+		justify-content: center;
+		align-items: start;
+	}
 }

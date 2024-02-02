@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Cloudinary } from '@cloudinary/url-gen';
+import { motion } from 'framer-motion';
 
 import Footer from '../../shared/Footer';
 
@@ -13,7 +14,14 @@ const About = () => {
 	return (
 		<>
 			<div className='container-fluid about-head d-flex align-items-center justify-content-center'>
-				<h1>About Us</h1>
+				<motion.div
+					className='header-title'
+					initial={{ opacity: 0, scale: 0.8 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 1.0 }}
+				>
+					<h1 className='fs-1 fw-bold font-monospace'>About Us</h1>
+				</motion.div>
 			</div>
 			<div
 				className='container-fl56uid about-info about-bg d-flex flex-column align-items-center justify-content-center'
@@ -21,7 +29,7 @@ const About = () => {
 			>
 				<div className='about-text'>
 					<div className='row h-20 align-items-center justify-content-center'>
-						<h1>...with good faith</h1>
+						<h1 className='about-title'>...with good faith</h1>
 					</div>
 					<div className='row h-80 align-items-start justify-content-center'>
 						<p>

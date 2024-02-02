@@ -1,7 +1,7 @@
 .nav-color {
 	/* background-color: rgba(219, 226, 239, 0.1); */
 	/* secondary color */
-	background-color: rgb(63, 114, 175, 0.6);
+	background-color: rgb(63, 114, 175, 0.9);
 }
 
 .navbar-brand {
@@ -16,4 +16,19 @@
 	color: var(--prinary-color);
 	text-decoration: none;
 	/* font-weight: bold; */
+}
+
+.logo {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+}
+
+.skrt {
+	text-decoration: none;
+	color: var(--prinary-color);
+}
+
+.offcanvas-color {
+	background-color: var(--cream-color);
 }

@@ -3,16 +3,23 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
+import { Link } from 'react-router-dom';
+
+import { Cloudinary } from '@cloudinary/url-gen';
+import { AdvancedImage } from '@cloudinary/react';
+
 import './Navbar.css';
-import { Nav } from 'react-bootstrap';
 
 const Navbar = () => {
+	const cld = new Cloudinary({ cloud: { cloudName: 'dweffaoxw' } });
+	const logo = cld.image('bonafide');
+
 	return (
 		<>
 			<nav className='nav-color navbar navbar-expand-lg fixed-top'>
 				<div className='container-fluid px-5'>
 					<NavLink className='navbar-brand' to='/'>
-						BonaFide
+						<AdvancedImage cldImg={logo} className='logo' />
 					</NavLink>
 					<button
 						className='navbar-toggler'
@@ -87,15 +94,12 @@ const Navbar = () => {
 
 			{/* Offcanvas component */}
 			<div
-				className='offcanvas offcanvas-start'
+				className='offcanvas offcanvas-start offcanvas-color'
 				tabIndex='-1'
 				id='offCanvas'
 				aria-labelledby='offCanvasLabel'
 			>
 				<div className='offcanvas-header'>
-					<h5 className='offcanvas-title' id='offCanvasLabel'>
-						Offcanvas
-					</h5>
 					<button
 						type='button'
 						className='btn-close'
@@ -104,16 +108,16 @@ const Navbar = () => {
 					></button>
 				</div>
 				<div className='offcanvas-body'>
-					<ul class='navbar-nav justify-content-end flex-grow-1 pe-3'>
-						<li class='nav-item'>
-							<a class='nav-link active' aria-current='page' href='#'>
+					<ul className='navbar-nav justify-content-end flex-grow-1 pe-3'>
+						<li className='nav-item'>
+							<NavLink className='skrt' to='/'>
 								Home
-							</a>
+							</NavLink>
 						</li>
-						<li class='nav-item'>
-							<a class='nav-link' href='#'>
-								Link
-							</a>
+						<li className='nav-item'>
+							<NavLink className='skrt' to='/about'>
+								About
+							</NavLink>
 						</li>
 					</ul>
 				</div>
